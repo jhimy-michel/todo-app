@@ -41,11 +41,13 @@ function App() {
   };
 
   const saveUpdates = (updatedTask, index) => {
-    setTaskList((prevArray) => {
-      const updatedArray = [...prevArray];
-      updatedArray[index] = { ...updatedArray[index], task: updatedTask };
-      return updatedArray;
-    });
+    if (updatedTask) {
+      setTaskList((prevArray) => {
+        const updatedArray = [...prevArray];
+        updatedArray[index] = { ...updatedArray[index], task: updatedTask };
+        return updatedArray;
+      });
+    }
 
     setEditItemIndex(null);
   };
