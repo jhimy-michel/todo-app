@@ -1,0 +1,18 @@
+.addTask {
+  max-width: 50%;
+  padding: 1%;
+}
+
+.todoTitle {
+  text-align: center;
+  padding: 2rem;
+}
+
+.tableTask {
+  padding: 2rem;
+  max-width: 70%;
+}
+
+.actionButtons {
+  padding: 2px;
+}
